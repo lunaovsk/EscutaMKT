@@ -1,0 +1,229 @@
+footer {
+    display: flex;
+    width: 100%;
+    height: 40vh;
+    flex-direction: column;
+    background: linear-gradient(135deg,var(--color-blue-primary),var(--color-blue-secondary),var(--color-blue-primary));
+    padding: 3% 10%;
+    color: var(--color-text-blue-200);
+}
+
+.container-footer-desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+.container-footer-top {
+    width: 60%;
+}
+
+.title-logo-footer {
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+.p-footer {
+    font-size: 18px;
+    padding-right: 50%;
+    margin-bottom: 15px;
+}
+
+.container-redes-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.container-redes-footer .btn.redes, .container-redes-footer .btn.redes-blue {
+    background-color: #365382; 
+}
+
+.container-redes-footer .btn.redes svg, .container-redes-footer .btn.redes-blue svg {
+    color: var(--color-text-blue-200); 
+}
+
+.container-redes-footer .btn.redes:hover , .container-redes-footer .btn.redes-blue:hover {
+    background-color: var(--color-orange-secondary);
+}
+
+.container-footer-links {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-start;
+}
+
+.title-links {
+    font-size: 20px;
+    color: var(--color-white);
+    margin-bottom: 15px;
+
+}
+
+.container-footer-links .btn.transparent {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: var(--color-text-blue-200);
+}
+
+.container-footer-links .btn.transparent:hover {
+    color: var(--color-orange-secondary);
+}
+
+.container-footer-contact {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: flex-start;
+}
+
+.title-cta {
+    font-size: 20px;
+    color: var(--color-white);
+}
+
+.container-footer-contact a.btn.footer-cta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-text-blue-200);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.btn.footer-cta {
+    margin-top: 15px;
+}
+
+.container-footer-contact a.btn.footer-cta:hover {
+    color: var(--color-orange-secondary);
+}
+
+.container-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff20;
+}
+
+.p-footer-bottom {
+    margin-top: 30px;
+}
+
+.container-links-p-t {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.container-links-p-t a {
+    font-size: 16px;
+    color: var(--color-text-blue-200);
+    text-decoration: none;
+}
+
+.container-links-p-t a:hover {
+    color: var(--color-orange-secondary);
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  footer {
+    height: auto;
+    padding: 5% 6%;
+  }
+
+  .container-footer-desc {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 35px;
+  }
+
+  .container-footer-top {
+    width: 100%;
+  }
+
+  .container-footer-links,
+  .container-footer-contact {
+    width: 45%;
+  }
+
+  .p-footer {
+    padding-right: 30%;
+    font-size: 16px;
+  }
+  
+  .title-logo-footer,
+  .title-links,
+  .title-cta {
+    font-size: 18px;
+  }
+  
+  .container-footer-links .btn.transparent,
+  .container-footer-contact a.btn.footer-cta {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  footer {
+    height: auto;
+    padding: 40px 5%;
+  }
+
+  .container-footer-desc {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 28px;
+  }
+
+  .container-footer-top,
+  .container-footer-links,
+  .container-footer-contact {
+    width: 100%;
+  }
+
+  .p-footer {
+    padding-right: 0;
+    font-size: 15px;
+  }
+
+  .title-logo-footer,
+  .title-links,
+  .title-cta {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .container-footer-links .btn.transparent {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  .container-footer-contact a.btn.footer-cta {
+    font-size: 15px;
+    gap: 6px;
+  }
+
+  .container-footer-bottom {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .container-links-p-t {
+    
+    margin-top: 0;
+    gap: 8px;
+  }
+
+  .p-footer-bottom {
+    margin-top: 0;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .container-links-p-t a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,235 @@
+/* =========================
+   BASE CARD
+========================= */
+
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    padding: 0 15px;
+    border-radius: 12px;
+    background-color: var(--color-white);
+    box-shadow: 0 6px 18px var(--color-shadow-secondary);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.container-cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px var(--color-shadow-secondary);
+}
+
+/* =========================
+   TITLE AREA
+========================= */
+
+.container-cards-titles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.container-cards-titles h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-blue-secondary);
+    margin: 0;
+}
+
+/* =========================
+   ICON
+========================= */
+
+.container-cards .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    color: var(--color-white);
+    background-color: var(--color-orange-secondary);
+    border-radius: 8px;
+}
+
+/* =========================
+   DESCRIPTION / LIST
+========================= */
+
+.container-tags {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--color-text-primary);
+}
+
+/* =========================
+   VARIANT: CIRCLE (ABOUT)
+========================= */
+
+.container-cards.circle {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+    min-height: 260px;
+    height: 100%;       
+    flex: 1;            
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.container-cards.circle:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.container-cards.circle .container-cards-titles {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.container-cards.circle .container-cards-titles h4 {
+    margin-top: 15px;
+    font-size: 26px;
+    color: var(--color-blue-primary);
+}
+
+.container-cards.circle .icon {
+    width: 60px;
+    height: 60px;
+    font-size: 36px;
+    border-radius: 50%;
+    background-color: var(--color-blue-secondary);
+}
+
+.container-cards.circle .container-tags {
+    margin-top: 16px;
+    padding: 0 20px;
+}
+
+.container-cards.circle ul {
+    list-style: circle;
+    text-align: left;
+    padding-left: 22px;   
+    margin: 0;
+}
+.container-cards.circle li::marker {
+    color: var(--color-blue-secondary);
+}
+
+.container-cards.circle li {
+    margin: 6px 0;
+}
+
+.container-cards.circle .container-description,
+.container-cards.circle .container-description-p {
+    font-size: 18px;
+    color: black;
+}
+
+.container-cards.circle .container-description-p {
+    padding: 0 20%;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .container-cards {
+        min-height: 180px;
+        padding: 0 12px;
+    }
+    
+    .container-cards-titles h4 {
+        font-size: 16px;
+    }
+    
+    .container-cards .icon {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+    
+    .container-tags {
+        font-size: 14px;
+    }
+    
+    .container-cards.circle {
+        min-height: 240px;
+    }
+    
+    .container-cards.circle .container-cards-titles h4 {
+        font-size: 22px;
+    }
+    
+    .container-cards.circle .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+    }
+    
+    .container-cards.circle .container-description-p {
+        padding: 0 10%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 640px) {
+  .container-cards {
+    min-height: 160px;
+    padding: 0 14px;
+  }
+  
+  .container-cards-titles {
+    gap: 8px;
+  }
+  
+  .container-cards-titles h4 {
+    font-size: 16px;
+  }
+  
+  .container-cards .icon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  .container-tags {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+  
+  .container-cards.circle {
+    min-height: 220px;
+  }
+  
+  .container-cards.circle .container-cards-titles h4 {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  .container-cards.circle .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+  
+  .container-cards.circle .container-tags {
+    padding: 0 10px;
+  }
+  
+  .container-cards.circle .container-description-p {
+    padding: 0 8%;
+    font-size: 16px;
+  }
+  
+  .container-cards.circle ul {
+    padding-left: 18px;
+  }
+  
+  .container-cards.circle li {
+    margin: 4px 0;
+    font-size: 14px;
+  }
+}

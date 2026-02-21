@@ -1,0 +1,199 @@
+.btn.transparent{
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+}
+
+.btn.transparent:hover {
+    cursor: pointer;
+    color: var(--color-orange-secondary);
+}
+
+.btn.background-orange {
+    background-color: var(--color-orange-primary);
+    width: 120px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 4px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn.background-orange:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container-icon.background-orange {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.btn.background {
+    background-color: var(--color-orange-primary);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
+}
+
+.container-icon {
+    margin-top: 2px;
+}
+
+.container-icon.background{
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+.btn.background:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    margin-right: 5px;
+}
+
+.btn.background-transparent {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--color-white);
+    padding: 10px 20px;
+    border: 1px solid var(--color-white);
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.container-icon.background-transparent {
+    font-size: 16px;
+}
+
+.btn.background-transparent:hover {
+    cursor: pointer;
+    color: var(--color-orange-secondary);
+    background-color: var(--color-white);
+    transform: scale(1.05);
+    margin-left: 5px;
+}
+
+/* =========================
+   CTA BUTTON
+========================= */
+
+
+.btn.bg-white,
+a.btn.bg-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--color-white);
+    color: var(--color-orange-primary);
+    padding: 14px 22px;
+    border-radius: 14px;
+    box-shadow:0 16px 34px var(--color-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    text-decoration: none;
+}
+
+.btn.bg-white:hover,
+a.btn.bg-white:hover {
+    transform: translateY(-2px);
+    color: var(--color-white);
+    border: 1px solid var(--color-white);
+    background: var(--color-shadow);
+}
+
+.btn.bg-transparent {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff14;
+    color: var(--color-white);
+    padding: 14px 22px;
+    border-radius: 14px;
+    border: 1px solid #ffffff59;
+    backdrop-filter: blur(8px);
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+}
+
+.btn.bg-transparent:hover {
+    transform: translateY(-2px);
+    background: var(--color-shadow);
+    border-color: rgba(255,255,255,0.55);
+}
+
+.container-icon.bg-white,
+.container-icon.bg-transparent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    .btn.background-orange {
+        width: 110px;
+        font-size: 13px;
+        padding: 6px;
+    }
+    
+    .btn.background {
+        padding: 8px 16px;
+        gap: 8px;
+        font-size: 13px;
+    }
+    
+    .btn.background-transparent {
+        padding: 8px 16px;
+        gap: 8px;
+        font-size: 13px;
+    }
+    
+    .btn.bg-white,
+    a.btn.bg-white,
+    .btn.bg-transparent {
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 640px) {
+  .btn.background-orange {
+    width: 100px;
+    font-size: 12px;
+    padding: 6px;
+  }
+  
+  .btn.background,
+  .btn.background-transparent {
+    padding: 8px 14px;
+    gap: 6px;
+    font-size: 12px;
+  }
+  
+  .btn.bg-white,
+  a.btn.bg-white,
+  .btn.bg-transparent {
+    padding: 12px 18px;
+    border-radius: 12px;
+  }
+  
+  .container-icon.background-orange,
+  .container-icon.background,
+  .container-icon.background-transparent,
+  .container-icon.bg-white,
+  .container-icon.bg-transparent {
+    font-size: 14px;
+  }
+}

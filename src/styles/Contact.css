@@ -1,0 +1,247 @@
+#contact {
+    display: flex;
+    background-color: var(--color-white);
+
+}
+
+.container-form {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+    gap: 120px;
+}
+.container-info-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-contact {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 20px;
+
+}
+.contact-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.btn.cta-contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 16px;
+    background: var(--color-gray-50);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: black;
+    margin-bottom: 15px;
+    white-space: pre-line;
+}
+
+.btn.cta-contact:hover {
+    background: var(--color-orange-50);
+}
+
+.container-icon.cta-contact {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-orange-100), var(--color-orange-50));
+    transition: 0.3s ease;
+}
+
+.btn.cta-contact:hover .container-icon.cta-contact {
+    background: var(--color-orange-primary);
+}
+
+.container-icon.cta-contact svg {
+    width: 22px;
+    height: 22px;
+    color: var(--color-orange-primary);
+    transition: 0.3s ease;
+}
+
+.btn.cta-contact:hover .container-icon.cta-contact svg {
+    color: var(--color-white);
+}
+
+.contact-actions-redes {
+    display: flex;
+    align-items: center;
+    gap: 12px;     
+    margin: 10px 15px 0;  
+
+}
+
+.btn.redes-blue {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-blue-primary);
+    transition: 0.3s ease;
+}
+
+.btn.redes {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-orange-primary);
+    transition: 0.3s ease;
+}
+
+.contact-actions .btn.redes:hover {
+    background-color: var(--color-orange-secondary);
+}
+
+.contact-actions .btn.redes-blue:hover {
+    background-color: var(--color-blue-secondary);
+}
+
+.btn.redes svg, .btn.redes-blue svg {
+    width: 22px;
+    height: 22px;
+    color: var(--color-white);
+}
+
+.contact-hours {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 16px;
+    background: linear-gradient(
+        135deg,
+        var(--color-orange-50),
+        var(--color-white)
+    );
+    border: 1px solid var(--color-orange-100);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.container-label-cta {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.container-span-cta {
+    font-size: 16px;
+    color: var(--color-gray-600);
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  #contact {
+    height: auto;
+    padding: 60px 6%;
+  }
+  
+  .container-form {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+  }
+
+  .title-contact,
+  .contact-subtitle {
+    font-size: 22px;
+  }
+
+  .btn.cta-contact {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+  
+  .contact-hours {
+    margin-top: 20px;
+    padding: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  #contact {
+    height: auto;
+    padding: 40px 5%;
+  }
+  
+  .container-form {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 25px;
+  }
+  
+  .title-contact {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .btn.cta-contact {
+    gap: 12px;
+    padding: 12px 14px;
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .container-icon.cta-contact {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .container-icon.cta-contact svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-actions-redes {
+    margin: 10px 0 0;
+    gap: 10px;
+  }
+  
+  .btn.redes,
+  .btn.redes-blue {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .btn.redes svg,
+  .btn.redes-blue svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-subtitle {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  
+  .contact-hours {
+    margin-top: 20px;
+    padding: 16px;
+  }
+  
+  .container-label-cta {
+    font-size: 16px;
+  }
+  
+  .container-span-cta {
+    font-size: 14px;
+  }
+}
