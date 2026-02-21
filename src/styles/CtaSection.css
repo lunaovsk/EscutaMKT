@@ -2,7 +2,7 @@
     position: relative;
     overflow: hidden;
     text-align: center;
-    background: linear-gradient(var(--color-orange-primary), var(--color-orange-secondary), var(--color-orange-primary));
+    background: linear-gradient(135deg,var(--color-blue-primary),var(--color-blue-secondary),var(--color-blue-primary));
     
 }
 

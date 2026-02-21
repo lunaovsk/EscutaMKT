@@ -24,7 +24,7 @@
     color: var(--color-white);
 }
 
-    #work .section-paragraph {
+#work .section-paragraph {
     font-size: 20px;
     color: #ebf5ffe6;
     max-width: 900px;
@@ -117,6 +117,20 @@
     transform: scale(1.04);
 }
 
+.work-desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+    width: 100%;
+}
+
+.work-mobile-carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
   #work {
     height: auto;
@@ -130,6 +144,11 @@
   
   .about-work {
     margin-top: 40px;
+  }
+  
+  .work-desktop-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
   }
   
   #work .container-cards.work-step {
@@ -151,6 +170,7 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   #work {
     height: auto;
@@ -164,12 +184,22 @@
   
   .about-work {
     margin-top: 30px;
-    grid-template-columns: 1fr;
-    gap: 16px;
+  }
+  
+  .work-desktop-grid {
+    display: none;
+  }
+  
+  .work-mobile-carousel {
+    display: block;
+    margin-top: 20px;
   }
   
   #work .container-cards.work-step {
     padding: 18px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
   }
   
   #work .container-cards.work-step .number {
@@ -194,52 +224,9 @@
   #work .container-cards.work-step:hover {
     transform: scale(1.02);
   }
-}
-
-.work-desktop-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 28px;
-    width: 100%;
-}
-
-.work-mobile-carousel {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-    .work-desktop-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 22px;
-    }
-}
-
-@media (max-width: 640px) {
-    .work-desktop-grid {
-        display: none;
-    }
-    
-    .work-mobile-carousel {
-        display: block;
-        margin-top: 20px;
-    }
-    
-    #work {
-        height: auto;
-        min-height: 70vh;
-        padding-bottom: 40px;
-    }
-    
-    .work-mobile-carousel .carousel-slide {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .work-mobile-carousel .container-cards.work-step {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-    }
+  
+  .work-mobile-carousel .carousel-slide {
+    display: flex;
+    justify-content: center;
+  }
 }

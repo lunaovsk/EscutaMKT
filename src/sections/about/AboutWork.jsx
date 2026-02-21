@@ -34,7 +34,6 @@ const AboutWork = () => {
   return (
     <Section id={sectionWork.id} title={sectionWork.title} paragraph={sectionWork.paragraph}>
       <div ref={ref} className={`about-escuta reveal ${isVisible ? "show" : ""}`}>
-        {/* Desktop: Grid */}
         {!isMobile && (
           <div className="work-desktop-grid">
             {stepsData.map((item) => (
@@ -50,7 +49,6 @@ const AboutWork = () => {
           </div>
         )}
 
-        {/* Mobile: Carrossel */}
         {isMobile && (
           <div className="work-mobile-carousel">
             <Carousel
@@ -58,8 +56,7 @@ const AboutWork = () => {
               variant="work"
               itemsPerView={{ desktop: 4, tablet: 2, mobile: 1 }}
               autoPlay={true}
-              autoPlayInterval={5000}
-              showArrows={true}
+              autoPlayInterval={8000}
               showDots={true}
               renderItem={renderStep}
             />

@@ -80,6 +80,90 @@
     color: var(--color-orange-secondary);
 }
 
+.services-desktop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.services-mobile-accordion {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.services-mobile-accordion .accordion-item {
+    background: var(--color-white);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    border: 1px solid var(--color-orange-100);
+}
+
+.services-mobile-accordion .accordion-header {
+    padding: 16px 20px;
+    background: var(--color-white);
+}
+
+.services-mobile-accordion .accordion-header-left {
+    gap: 12px;
+}
+
+.services-mobile-accordion .accordion-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 22px;
+    background: linear-gradient(135deg, var(--color-orange-100), var(--color-orange-50));
+    color: var(--color-orange-primary);
+}
+
+.services-mobile-accordion .accordion-header.active .accordion-icon {
+    background: linear-gradient(135deg, var(--color-orange-primary), var(--color-orange-secondary));
+    color: var(--color-white);
+}
+
+.services-mobile-accordion .accordion-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-blue-primary);
+}
+
+.services-mobile-accordion .accordion-content-inner {
+    padding: 0 20px 20px 76px;
+}
+
+.services-mobile-accordion .accordion-description {
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    text-align: left;
+}
+
+.services-mobile-accordion .accordion-list {
+    margin-top: 8px;
+}
+
+.services-mobile-accordion .accordion-list li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 18px;
+    color: var(--color-text-secondary);
+    text-align: left;
+}
+
+.services-mobile-accordion .accordion-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-orange-primary);
+    font-size: 16px;
+}
+
+/* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
   #services {
     height: auto;
@@ -95,8 +179,9 @@
     gap: 22px;
   }
 
-  #services .container-services .container-cards {
-    max-width: 340px;
+  .services-desktop-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   
   #services .container-cards.services {
@@ -110,6 +195,7 @@
   }
 }
 
+/* Mobile */
 @media (max-width: 640px) {
   #services {
     height: auto;
@@ -121,54 +207,35 @@
     font-size: 18px;
   }
   
-  #services .container-services {
-    gap: 16px;
-    flex-direction: column;
-    align-items: center;
+  .services-desktop-grid {
+    display: none;
   }
   
-  #services .container-services .container-cards {
-    max-width: 100%;
-    width: 100%;
-    margin-top: 0;
+  .services-mobile-accordion {
+    display: block;
   }
   
-  #services .container-cards.services {
-    padding: 20px;
+  .services-mobile-accordion .accordion-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
   
-  #services .container-cards.services .container-cards-titles h4 {
+  .services-mobile-accordion .accordion-title {
     font-size: 15px;
   }
   
-  #services .container-cards.services .icon {
-    width: 44px;
-    height: 44px;
-    font-size: 18px;
-  }
-  
-  #services .container-cards.services .container-description-p,
-  #services .container-cards.services ul.container-description {
+  .services-mobile-accordion .accordion-description {
     font-size: 13px;
   }
   
-  #services .container-cards.services ul.container-description {
-    padding-left: 16px;
-    margin-top: 12px;
+  .services-mobile-accordion .accordion-list li {
+    font-size: 13px;
   }
-}
-
-.services-desktop-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    width: 100%;
-}
-
-.services-mobile-accordion {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  
+  .services-mobile-accordion .accordion-content-inner {
+    padding: 0 16px 16px 68px;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -177,21 +244,8 @@
     }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-    .services-desktop-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-}
-
 @media (min-width: 641px) {
     .services-mobile-accordion {
-        display: none;
-    }
-}
-
-@media (max-width: 640px) {
-    .services-desktop-grid {
         display: none;
     }
 }

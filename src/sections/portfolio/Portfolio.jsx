@@ -33,15 +33,10 @@ const Portfolio = () => {
     />
   );
 
-  const getItemsPerView = () => {
-    if (isMobile) return { desktop: 3, tablet: 2, mobile: 1 };
-    if (isTablet) return { desktop: 3, tablet: 2, mobile: 1 };
-    return { desktop: 3, tablet: 2, mobile: 1 };
-  };
-
   return (
     <Section id={sectionPortfolio.id} title={sectionPortfolio.title} paragraph={sectionPortfolio.paragraph}>
       <div ref={ref} className={`portfolio-content reveal ${isVisible ? "show" : ""}`}>
+        {/* Desktop: Grid 3 colunas */}
         {!isMobile && !isTablet && (
           <div className="portfolio-desktop-grid">
             {portfolioItems.map((item, index) => (
@@ -55,6 +50,7 @@ const Portfolio = () => {
           </div>
         )}
 
+        {/* Tablet: Grid 2 colunas */}
         {isTablet && (
           <div className="portfolio-tablet-grid">
             {portfolioItems.map((item, index) => (
@@ -68,6 +64,7 @@ const Portfolio = () => {
           </div>
         )}
 
+        {/* Mobile: Carrossel */}
         {isMobile && (
           <div className="portfolio-mobile-carousel">
             <Carousel
@@ -75,8 +72,7 @@ const Portfolio = () => {
               variant="portfolio"
               itemsPerView={{ desktop: 3, tablet: 2, mobile: 1 }}
               autoPlay={true}
-              autoPlayInterval={4000}
-              showArrows={true}
+              autoPlayInterval={8000}
               showDots={true}
               renderItem={renderPortfolioItem}
             />

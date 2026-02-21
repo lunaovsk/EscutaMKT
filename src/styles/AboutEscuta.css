@@ -24,43 +24,6 @@
     gap: 10px;
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-  #about .section-paragraph {
-    font-size: 20px;
-    padding: 4% 6%;
-  }
-
-  .about-escuta {
-    margin-top: 34px;
-    flex-wrap: wrap;
-    gap: 18px;
-  }
-  
-  .about-escuta .container-cards.circle {
-    flex: 1 1 calc(50% - 18px);
-    min-width: 280px;
-  }
-}
-
-@media (max-width: 640px) {
-  #about .section-paragraph {
-    font-size: 18px;
-    padding: 8% 5%;
-  }
-
-  .about-escuta {
-    margin-top: 30px;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .about-escuta .container-cards.circle {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
 .about-desktop-grid {
     display: flex;
     gap: 20px;
@@ -75,36 +38,142 @@
     text-align: left;
 }
 
+.about-mobile-accordion .accordion-container {
+    width: 100%;
+}
+
+.about-mobile-accordion .accordion-item {
+    margin-bottom: 12px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px var(--color-shadow);
+    background: var(--color-white);
+    border: 1px solid var(--color-orange-100);
+}
+
+.about-mobile-accordion .accordion-header {
+    background: var(--color-white);
+    border: none;
+    padding: 18px 20px;
+}
+
+.about-mobile-accordion .accordion-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.about-mobile-accordion .accordion-title {
+    font-size: 20px;
+    color: var(--color-blue-primary);
+}
+
+.about-mobile-accordion .accordion-content {
+    background: var(--color-white);
+}
+
+.about-mobile-accordion .accordion-content-inner {
+    padding: 0 20px 20px 85px;
+}
+
+.about-mobile-accordion .accordion-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.about-mobile-accordion .accordion-list {
+    margin-top: 10px;
+}
+
+.about-mobile-accordion .accordion-list li {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--color-text-secondary);
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #about .section-paragraph {
+    font-size: 20px;
+    padding: 4% 6%;
+  }
+
+  .about-escuta {
+    margin-top: 34px;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+  
+  .about-desktop-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .about-desktop-grid .container-cards.circle {
+    flex: 1 1 calc(50% - 20px);
+    min-width: 280px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  #about .section-paragraph {
+    font-size: 18px;
+    padding: 8% 5%;
+  }
+
+  .about-escuta {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .about-desktop-grid {
+    display: none;
+  }
+  
+  .about-mobile-accordion {
+    display: block;
+  }
+  
+  .about-mobile-accordion .accordion-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+  
+  .about-mobile-accordion .accordion-title {
+    font-size: 18px;
+  }
+  
+  .about-mobile-accordion .accordion-description {
+    font-size: 15px;
+  }
+  
+  .about-mobile-accordion .accordion-list li {
+    font-size: 14px;
+  }
+  
+  .about-mobile-accordion .accordion-content-inner {
+    padding: 0 16px 16px 70px;
+  }
+}
+
 @media (min-width: 1025px) {
     .about-desktop-grid {
         gap: 30px;
     }
 }
 
-@media (min-width: 641px) and (max-width: 1024px) {
-    .about-desktop-grid {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-    
-    .about-desktop-grid .container-cards.circle {
-        flex: 1 1 calc(50% - 20px);
-        min-width: 280px;
-    }
-}
-
 @media (min-width: 641px) {
     .about-mobile-accordion {
         display: none;
-    }
-}
-
-@media (max-width: 640px) {
-    .about-desktop-grid {
-        display: none;
-    }
-    
-    .about-escuta {
-        margin-top: 30px;
     }
 }

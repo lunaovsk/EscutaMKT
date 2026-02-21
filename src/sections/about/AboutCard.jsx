@@ -49,8 +49,7 @@ const AboutCard = () => {
                             variant="aboutcard"
                             itemsPerView={{ desktop: 4, tablet: 2, mobile: 1 }}
                             autoPlay={true}
-                            autoPlayInterval={4000}
-                            showArrows={true}
+                            autoPlayInterval={8000}
                             showDots={true}
                             renderItem={renderCard}
                         />
