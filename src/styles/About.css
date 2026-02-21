@@ -20,6 +20,7 @@
 @media (min-width: 641px) and (max-width: 1024px) {
     .container-card-about {
         padding: 5% 6%;
+        box-shadow: none;
     }
     
     .about-header {
