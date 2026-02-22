@@ -141,6 +141,9 @@
         padding: 0 12px;
         box-shadow: none;
     }
+    .container-cards:hover {
+        box-shadow: none;
+    }   
     
     .container-cards-titles h4 {
         font-size: 16px;
@@ -182,6 +185,9 @@
     padding: 0 14px;
     box-shadow: none;
   }
+  .container-cards:hover {
+    box-shadow: none;
+   }   
   
   .container-cards-titles {
     gap: 8px;
