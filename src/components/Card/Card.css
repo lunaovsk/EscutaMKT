@@ -139,6 +139,7 @@
     .container-cards {
         min-height: 180px;
         padding: 0 12px;
+        box-shadow: none;
     }
     
     .container-cards-titles h4 {
@@ -179,6 +180,7 @@
   .container-cards {
     min-height: 160px;
     padding: 0 14px;
+    box-shadow: none;
   }
   
   .container-cards-titles {

@@ -36,7 +36,6 @@ const Portfolio = () => {
   return (
     <Section id={sectionPortfolio.id} title={sectionPortfolio.title} paragraph={sectionPortfolio.paragraph}>
       <div ref={ref} className={`portfolio-content reveal ${isVisible ? "show" : ""}`}>
-        {/* Desktop: Grid 3 colunas */}
         {!isMobile && !isTablet && (
           <div className="portfolio-desktop-grid">
             {portfolioItems.map((item, index) => (
@@ -50,7 +49,6 @@ const Portfolio = () => {
           </div>
         )}
 
-        {/* Tablet: Grid 2 colunas */}
         {isTablet && (
           <div className="portfolio-tablet-grid">
             {portfolioItems.map((item, index) => (
@@ -64,7 +62,6 @@ const Portfolio = () => {
           </div>
         )}
 
-        {/* Mobile: Carrossel */}
         {isMobile && (
           <div className="portfolio-mobile-carousel">
             <Carousel

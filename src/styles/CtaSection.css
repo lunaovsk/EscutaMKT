@@ -3,7 +3,6 @@
     overflow: hidden;
     text-align: center;
     background: linear-gradient(135deg,var(--color-blue-primary),var(--color-blue-secondary),var(--color-blue-primary));
-    
 }
 
 .cta-content section {

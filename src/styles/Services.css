@@ -163,7 +163,6 @@
     font-size: 16px;
 }
 
-/* Tablet */
 @media (min-width: 641px) and (max-width: 1024px) {
   #services {
     height: auto;
@@ -195,7 +194,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 640px) {
   #services {
     height: auto;
