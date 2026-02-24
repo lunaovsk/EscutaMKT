@@ -8,35 +8,35 @@ const videos = [
     youtubeId: "jNQXAC9IVRw",
     title: "Short Test 1",
     description: "Exemplo de YouTube Shorts",
-    duration: 8000
+    duration: 20000
   },
   {
     id: 2,
     youtubeId: "9bZkp7q19f0",
     title: "Short Test 2",
     description: "Vídeo vertical popular",
-    duration: 8000
+    duration: 20000
   },
   {
     id: 3,
     youtubeId: "kxopViU98Xo",
     title: "Short Test 3",
     description: "Formato vertical",
-    duration: 8000
+    duration: 20000
   },
   {
     id: 4,
     youtubeId: "fLexgOxsZu0",
     title: "Short Test 4",
     description: "Embed vertical",
-    duration: 8000
+    duration: 20000
   },
   {
     id: 5,
     youtubeId: "l482T0yNkeo",
     title: "Short Test 5",
     description: "Teste de funcionamento",
-    duration: 8000
+    duration: 20000
   }
 ];
 
