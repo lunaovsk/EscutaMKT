@@ -59,27 +59,31 @@ export const btnContact = {
 
 export const fields = [
   {
-    label: "Nome",
+    label: "Nome *",
     type: "text",
     name: "name", 
-    placeholder: "Seu nome completo"
+    placeholder: "Seu nome completo",
+    required: true
   },
   {
-    label: "E-mail",
+    label: "E-mail *",
     type: "email",
     name: "email",
-    placeholder: "seu@email.com"
+    placeholder: "seu@email.com",
+    required: true
   },
   {
     label: "Empresa",
     type: "text",
     name: "subject",
-    placeholder: "Nome da sua empresa"
+    placeholder: "Nome da sua empresa",
+    required: false
   },
   {
-    label: "Mensagem",
+    label: "Mensagem *",
     type: "textarea",
     name: "message",
-    placeholder: "Conte-nos sobre seu projeto ou necessidade..."
+    placeholder: "Conte-nos sobre seu projeto ou necessidade...",
+    required: true
   }
 ];

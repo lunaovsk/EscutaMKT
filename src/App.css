@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +13,18 @@
 }
 
 :root {
+  /* Fonts */
+  --font-text-title: "Montserrat", sans-serif;
+  --font-text-subtitle: "Albert Sans", sans-serif;
+
   /* Orange */
-  --color-orange-primary: #D16A2C;
+  --color-orange-primary: #da6418;
   --color-orange-secondary: #E07B39;
   --color-orange-50: #FFF7ED;
   --color-orange-100: #FFEDD5;
 
   /* Blue */
-  --color-blue-primary: #283766;
+  --color-blue-primary: #243467;
   --color-blue-secondary: #2E3F73;
 
   /* Neutral */
@@ -43,9 +51,14 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-text-subtitle);
   background-color: var(--color-white);
   color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-text-title);
+  font-weight: 600;
 }
 
 h1 {

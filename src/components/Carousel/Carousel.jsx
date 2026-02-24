@@ -51,7 +51,6 @@ const Carousel = ({
         setCurrentIndex(pageIndex * itemsPerPage);
     };
 
-    // Função para iniciar o autoplay
     const startAutoplay = useCallback(() => {
         if (autoplayTimerRef.current) {
             clearInterval(autoplayTimerRef.current);
@@ -62,7 +61,6 @@ const Carousel = ({
         }
     }, [autoPlay, isUserInteracting, nextSlide, autoPlayInterval]);
 
-    // Função para parar o autoplay
     const stopAutoplay = useCallback(() => {
         if (autoplayTimerRef.current) {
             clearInterval(autoplayTimerRef.current);
@@ -70,7 +68,6 @@ const Carousel = ({
         }
     }, []);
 
-    // Gerenciar autoplay baseado no estado de interação
     useEffect(() => {
         if (autoPlay) {
             if (!isUserInteracting) {
@@ -85,15 +82,13 @@ const Carousel = ({
         };
     }, [autoPlay, isUserInteracting, startAutoplay, stopAutoplay]);
 
-    // Reiniciar autoplay após 3 segundos sem interação
     const handleUserInteraction = () => {
         setIsUserInteracting(true);
         stopAutoplay();
 
-        // Timer para reativar autoplay após 3 segundos sem interação
         setTimeout(() => {
             setIsUserInteracting(false);
-        }, 3000);
+        }, 10000);
     };
 
     const handleDotClick = (pageIndex) => {
@@ -130,14 +125,12 @@ const Carousel = ({
         setTouchEnd(null);
     };
 
-    // Pausar autoplay quando o mouse entra no carrossel
     const onMouseEnter = () => {
         if (autoPlay) {
             stopAutoplay();
         }
     };
 
-    // Retomar autoplay quando o mouse sai do carrossel
     const onMouseLeave = () => {
         if (autoPlay && !isUserInteracting) {
             startAutoplay();

@@ -3,7 +3,7 @@ import './App.css'
 import './styles/global.css'
 import Navbar from './components/Navbar/Navbar.jsx'
 import Hero from './sections/hero/Hero.jsx'
-import AboutCard from './sections/about/AboutCard.jsx'
+import Videos from './sections/about/Video.jsx'
 import AboutEscuta from './sections/about/AboutEscuta.jsx'
 import AboutWork from './sections/about/AboutWork.jsx'
 import Services from './sections/service/Services.jsx'
@@ -19,7 +19,7 @@ function App() {
     <>
       <Navbar/>
       <Hero scrollToContact={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}whatsappUrl="https://wa.me/55SEUNUMERO"/>
-      <AboutCard/>
+      <Videos />
       <AboutEscuta/>
       <AboutWork/>
       <Services/>

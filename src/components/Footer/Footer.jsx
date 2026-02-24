@@ -4,13 +4,14 @@ import { headerButtons } from "../Navbar/NavInfo"
 import { FiPhone, FiMail } from "react-icons/fi";
 import { useScroll } from "../../config/useScroll.js";
 import './Footer.css'
+import logoTop from '../../assets/logo/Logotipo_icon_branco.png';
 
 const Footer = () => {
     const dataFooter = [
         {   
             icon: <FiMail />,
-            text: "contato@example.com.br",
-            href: "mailto:contato@escutamkt.com.br",
+            text: "escutamkt@gmail.com ",
+            href: "mailto:escutamkt@gmail.com",
             variant: "footer-cta"
 
         },
@@ -23,13 +24,16 @@ const Footer = () => {
     ]
     const { toSection } = useScroll();
     const internalButtons = headerButtons.filter(btn => !btn.href && btn.variant === "transparent");    
-
+    const handleLogoClick = () => {
+        toSection("home");
+        setMobileMenuOpen(false);
+    };
     return (
         
         <footer>
             <div className="container-footer-desc">
                 <div className="container-footer-top">
-                    <h6 className="title-logo-footer">Escuta MKT</h6>
+                    <img alt="Escuta MKT - Logo branca" src={logoTop} className="logo-img-footer" onClick={handleLogoClick}/>
                     <p className="p-footer">Transformamos presença digital em crescimento real de negócio através de estratégias baseadas em dados e resultados consistentes.</p>
                     <div className="container-redes-footer">
                         {data.filter(item => item.variant === "redes" || item.variant === "redes-blue").map((item, index) => (

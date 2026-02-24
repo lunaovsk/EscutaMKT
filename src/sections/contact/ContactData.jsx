@@ -3,8 +3,8 @@ import { FiPhone, FiMail , FiInstagram, FiLinkedin } from "react-icons/fi";
 export const data = [
     {   
         icon: <FiMail />,
-        text: "E-mail \ncontato@example.com.br",
-        href: "mailto:contato@escutamkt.com.br",
+        text: "E-mail \nescutamkt@gmail.com ",
+        href: "mailto:escutamkt@gmail.com ",
         variant: "cta-contact"
 
     },
@@ -20,13 +20,13 @@ export const data = [
     },
     { 
         icon: <FiInstagram/>,
-        href: "https://www.instagram.com",
+        href: "https://www.instagram.com/escutamkt?igsh=ZHZwZ3dxMTFhaWg0",
         variant: "redes-blue"
     },
-    {
+    /*{
         icon:<FiLinkedin/>,
         href: "https://www.linkedin.com",
         variant: "redes"
-    },
+    }*/
 ]
 

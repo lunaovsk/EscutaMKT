@@ -1,5 +1,5 @@
 import { LuChartColumn, LuTarget, LuUsers, LuTrendingUp, LuHeart, LuEye, LuEar, LuLightbulb, LuRocket, 
-    LuChartLine, LuInstagram, LuCompass, LuAward, LuChartNoAxesColumn    } from "react-icons/lu";
+    LuChartLine, LuInstagram, LuCompass, LuAward, LuChartNoAxesColumn, LuFilm } from "react-icons/lu";
  
  
 export const servicesData = [
@@ -30,21 +30,21 @@ export const aboutInfo = [
     {
         icon: <LuTarget/>,
         title: "Missão",
-        description:"Transformar a presença digital de empresas e profissionais em reputação sólida e crescimento sustentável.",
+        description:"Impulsionar o sucesso de empreendedores, combinando um planejamento sério com a elaboração de materiais de qualidade que alavanquem os projetos dos nossos clientes e gerem impacto real direto no consumidor final.",
         variant: "circle"
     },
 
     {
         icon: <LuEye/>,
         title: "Visão",
-        description:"Ser referência em gestão estratégica de marketing orientada a dados e performance.",
+        description:"Se tornar um parceiro indispensável para empreendedores impulsionarem seus negócios na região.",
         variant: "circle"
     },
 
     {
         icon: <LuHeart/>,
         title: "Valores",
-        items: ["Transparência", "Estratégia antes de execução", "Foco em resultado real", "Relacionamento com cliente", "Evolução contínua"],
+        items: ["Empático", "Simples", "Completo", "Único", "Transformador", "Ágil"],
         variant: "circle"
     }
 ]
@@ -80,26 +80,26 @@ export const stepsData = [
 export const serviceData = [
     {
         icon: <LuInstagram/>,
-        title: "Gestão Estratégica de Redes Sociais",
-        description: "Planejamento + conteúdo + análise de performance.",
-        items: ["Calendário editorial","Criação de conteúdo","Gestão de comunidade","Análise de métricas"],
+        title: "Presença Digital",
+        description: "Gestão estratégica da sua marca no ambiente digital, com foco em consistência, engajamento e crescimento sustentável.",
+        items: ["Gerenciamento de redes sociais","Criação de posts estáticos","Tráfego pago"],
         variant: "services"
     },
     {
         icon: <LuCompass/>,
-        title: "Planejamento de Marketing Digital",
-        description: "Estratégia completa de presença digital.",
-        items: ["Diagnóstico de marca","Estratégia multicanal","Funil de conversão","Alocação de orçamento"],
+        title: "Estratégia",
+        description: "Planejamento estruturado para posicionar sua marca de forma assertiva e transformar objetivos em resultados concretos.",
+        items: ["Planejamento de Marketing","Desenvolvimento de campanhas de endomarketing"],
         variant: "services"
     },
     {
-        icon: <LuAward />,
-        title: "Posicionamento e Autoridade de Marca",
-        description: "Construção de percepção e valor de marca.",
-        items: ["Estratégia de branding", "Storytelling", "Conteúdo de autoridade", "Gestão de reputação"],
+        icon: <LuFilm />,
+        title: "Produção & Execução",
+        description: "Criação e execução de campanhas e conteúdos que geram impacto real e fortalecem a conexão com o público.",
+        items: ["Idealização de campanhas e promoções", "Captação e edição de vídeos", "Cobertura de eventos"],
         variant: "services"
-    },
-    {
+    }
+    /*{
         icon: <LuChartNoAxesColumn/>,
         title: "Análise de Dados e KPIs",
         description: "Relatórios claros sobre performance e ROI.",
@@ -112,7 +112,7 @@ export const serviceData = [
         description: "Direcionamento profissional para crescimento digital.",
         items: ["Diagnóstico completo", "Plano de ação", "Mentoria", "Suporte contínuo"],
         variant: "services"
-    }
+    }*/
 ]
 
 

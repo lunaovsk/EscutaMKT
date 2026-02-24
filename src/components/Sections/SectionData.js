@@ -1,7 +1,7 @@
 export const sectionAbout = {
     id: "about",
     title: "Sobre a Escuta MKT",
-    paragraph:"Somos uma agência de marketing digital que une estratégia, criatividade e análise de dados para transformar a presença digital de empresas e profissionais em resultados tangíveis."
+    paragraph:"Uma agência com foco em fortalecimento do negócio, posicionamento assertivo e que respeita os valores reais de cada cliente. \n Nosso compromisso é com o seu sucesso. Através de ferramentas consolidadas de gestão de marketing, te ajudamos a fortalecer sua marca, suas relações com stakeholders e seu posicionamento no mundo. "
 }
 
 export const sectionWork = {
@@ -24,8 +24,8 @@ export const sectionPortfolio = {
 
 export const ctaSection = {
     id: "cta-section",
-    title: "Pronto para transformar sua presença digital em crescimento real?",
-    paragraph: "Vamos construir sua estratégia juntos."
+    title: "Você sente que precisa de um parceiro como nossa agência para seu negócio?",
+    paragraph: "Entre em contato pelo formulário abaixo!"
 
 }
 
